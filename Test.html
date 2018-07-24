@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://unpkg.com/@microsoft/office-js/dist/office.js"></script>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+	
+	
+	Excel.Workbooks.Open("C:/ACHAL/Test.xlsm");
+Excel.Visible = true;
+Excel.Run("Test.xlsm!Prog");
+
+
+
+}
+</script>
+</head>
+
+<body>
+
+<h1>A Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>
